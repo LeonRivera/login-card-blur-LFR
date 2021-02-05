@@ -1,0 +1,116 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+ 
+
+body{
+    background-image: url(../img/pexels-eberhard-grossgasteiger-1183021.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    /* background-repeat: no-repeat; */
+}
+.container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.card{
+    margin: 9rem 3rem;
+    padding-top: 8rem;
+    box-shadow: 0 10px 30px #000;
+    border-radius: 0.6rem;
+}
+.filtro{
+    -webkit-backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
+    background-color: rgba(243, 243, 243, 0.2);
+    /* filter: blur(2px); */
+}
+.perfil{
+    display: block;
+    border-radius: 50%;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    font-size: 1.5rem;
+   
+}
+
+input[type=text],input[type=password]{
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: solid white .1rem;
+}
+input[type=submit]{
+    height: 4rem;
+    background-color:  #e91e63;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+.enlace{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .card{
+    
+        
+        width: 50rem;
+        height: 80rem;
+    }
+
+    .formulario{
+        margin: 10rem;
+        
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .card{
+    
+        
+        width: 50rem;
+        height: 60rem;
+        
+    }
+
+    .formulario{
+        margin: 5rem;
+        
+    }
+    
+}
+
+a{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
